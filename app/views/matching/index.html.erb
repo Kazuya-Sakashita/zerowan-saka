@@ -1,0 +1,20 @@
+<div class="matching-index-page">
+
+  <div class="matching">
+    <p class="matching-title ml-3">お問合せ</p>
+    <p class="matching-num">問い合わせ中の相手 <%= @match_users.size %>人</p>
+
+    <div class="matching__list">
+      <% unless @match_users.empty? %>
+        <% @match_users.each do |user| %>
+         <div class="matching__person">
+           <div class="matching__person-name">
+             <%= user.email%>
+           </div>
+         </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+</div>
