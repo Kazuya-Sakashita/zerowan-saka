@@ -1,7 +1,11 @@
 <div class="matching-index-page">
 <p>チャットルームページ</p>
+<div>
+<h3><%= @chat_room_user.email %></h3>
+</div>
+
 <div id='chat-messages'>
-  <%= render @chat_messages %>
+  <%= render @chat_messages %><br>
 </div>
 
 <form>
